@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+##################### favor nao editar este script - usar apenas para buscar a saída do texto principal do verbete #######
+
 import sys
 import urllib2
 from BeautifulSoup import BeautifulSoup
@@ -29,5 +31,4 @@ textoprincipal=soup.find("p",{"id": "significado"})
 
 print textoprincipal.text
 
-##################################
-#print soup.prettify()
+

@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+######### favor não editar este script, usar apenas para visualizar o codigo html puro ############
+
+
+
 import sys
 import urllib2
 from BeautifulSoup import BeautifulSoup
@@ -23,11 +27,5 @@ resultadoHTML = resposta.read()
 
 soup = BeautifulSoup(resultadoHTML)
 
-textoprincipal=soup.find("p",{"id": "significado"})
 
-
-
-print textoprincipal.text
-
-##################################
-#print soup.prettify()
+print soup.prettify()
