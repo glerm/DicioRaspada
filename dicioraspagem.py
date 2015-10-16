@@ -52,29 +52,34 @@ print "\n§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§\n"
 ###########################################################################
 
 
-S=textoprincipal.find("p",{"class": "adicional cols"})
-# sinonimos
-S=next.next.next.next
+classeG=soup.find("p",{"class": "adicional"})
+
+print classeG
 
 
 
 
-if (S):
-	H=[]
-	for t in S.contents[1]: 
-		H.append(t.text)
 
 
-	print '\n'+"Sinônimos:"
-	for h in H:
-		print h
-	print '\n'
-else:
-	print "sem sinônimos no database \n"
 
 
-for teste in textoprincipal.findAll("a"):
-	print str(teste)
+
+
+########### sinonimos
+
+#URL='http://www.sinonimos.com.br/'+palavra+'/'
+
+#req = urllib2.Request(URL)
+#resposta = urllib2.urlopen(req)
+#resultadoHTML = resposta.read()
+
+
+#soup = BeautifulSoup(resultadoHTML)
+
+#print soup.prettify()
+
+
+
 
 
 ##################################
